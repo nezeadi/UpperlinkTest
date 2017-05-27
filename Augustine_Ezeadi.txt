@@ -1,0 +1,34 @@
+Q1 Dependency Injection
+Dependency Injection allows the removal of hard-coded dependencies and helps make applications loosely coupled, extendable and maintainable. We can implement dependency injection in java to move the dependency resolution from compile-time to runtime.
+
+Q2 Aspect Oriented Programming
+Aspect-oriented programming (AOP) is an approach to programming that allows global properties of a program to determine how it is compiled into an executable program. AOP can be used with object-oriented programming (OOP). An aspect is a subprogram that is associated with a specific property of a program.
+Cross cutting concerns
+
+Q3 How can a thread be created
+1.	Provide a runnable object that implements the run method of the Runnable interface
+ 	public class ImplRunnable implements Runnable {
+
+    public void run() {
+        System.out.println("Hello from a thread!");
+    }
+
+    public static void main(String args[]) {
+        (new Thread(new HelloRunnable())).start();
+    	}
+
+	}
+
+2.	The thread class itself implements Runnable. So to create a thread, the programmer can create a subclass of the thread class
+public class MyThread extends Thread {
+
+    public void run() {
+        System.out.println("Hello from a thread!");
+    }
+
+    public static void main(String args[]) {
+        (new HelloThread()).start();
+    }
+
+}
+le. We can implement dependency injection in java to move the dependency resolution from compile-time to runtime.
